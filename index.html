@@ -144,6 +144,8 @@
         });
         bounds_group.addLayer(layer_MapofNYCHADevelopments_3);
         map.addLayer(layer_MapofNYCHADevelopments_3);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'<img src="legend/MapofNYCHADevelopments_3.png" /> Map of NYCHA Developments': layer_MapofNYCHADevelopments_3,"Int-2080": layer_Int2080_2,"Initial": layer_Initial_1,"ESRI Gray (light)": layer_ESRIGraylight_0,},{collapsed:false}).addTo(map);
         setBounds();
         map.addControl(new L.Control.Search({
             layer: layer_MapofNYCHADevelopments_3,
